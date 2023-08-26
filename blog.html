@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palmyra - 100% Organic Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Your custom CSS here */
+
+        /* Custom CSS for changing the navbar color */
+        .custom-navbar {
+            background-color: #c2e8c2; /* Light green color */
+        }
+
+        /* Custom styling for buttons */
+        .custom-btn {
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar - Part 1 -->
+<section class="d-none d-md-block">
+    <nav class="navbar bg-body-tertiary" id="nav1">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div>
+                <p class="m-0">
+                    <span class="custom-icon"><i class="bi bi-telephone"></i></span>
+                    <span class="custom-icon"><i class="bi bi-envelope"></i></span>
+                    Welcome to Palmyra |
+                    <span class="custom-text"><i class="fa-solid fa-phone"></i> Phone: 123-456-7890 |</span>
+                    <span class="custom-text"><i class="fa-solid fa-envelope"></i>Email: info@palmyra.com</span>
+                </p>
+            </div>
+            <div class="d-flex">
+                <a class="btn custom-btn me-2" href="forms.html">Sign In   |</a>
+                <a class="btn custom-btn" href="forms.html">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- Top Bar - Part 2 -->
+<section>
+    <nav class="navbar navbar-expand-lg bg-success p-2 text-white" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="logo1.png" alt="Palmyra" width="30" height="30">
+                Palmyra
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About Us</a>
+                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-white" href="howto.html">How to Buy</a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="blog.html">Blogs</a>
+                    </li>
+                    <!-- Inside your HTML <ul class="navbar-nav mx-auto"> section -->
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link text-white" href="forms.html">Sign In</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-dark" type="button" onclick="performSearch()">Search</button>
+                </form>
+                <script>
+                    function performSearch() {
+                        // Get the search input value
+                        const searchQuery = document.getElementById('searchInput').value;
+
+                        // Check if the search query is empty
+                        if (searchQuery.trim() === "") {
+                            return; // Do not perform the search
+                        }
+
+                        // Construct the URL for the search results page with the search query as a parameter
+                        const searchResultsURL = `shop.html?query=${encodeURIComponent(searchQuery)}`;
+
+                        // Redirect the user to the search results page
+                        window.location.href = searchResultsURL;
+                    }
+                </script>
+
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- Blog Content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <!-- Blog Post 1 -->
+            <div class="card mb-4" style="margin-left: 15px !important; margin-right: 15px !important;">
+                <img src="bg1.png" class="card-img-top" alt="women" width="100%" height="400px">
+                <div class="card-body">
+                    <h2 class="card-title">Women's Power</h2>
+                    <p class="card-text">"In the world of Palmyra Productions, the spirit of women's empowerment is a driving force that propels
+                        our success and sustainability. From nurturing our organic farms to steering our operations, women are the heart and
+                        soul of our journey. The women of Palmyra bring passion, resilience, and dedication to everything they do. Their
+                        commitment to providing 100% organic products goes hand in hand with their commitment to our planet and its health.
+                        Our belief in women's empowerment extends beyond our organization. We understand that when women prosper, entire
+                        communities thrive. By offering skill development programs and leadership opportunities, we're fostering an
+                        environment where women can grow, innovate, and lead. Join us in celebrating the incredible women who are
+                        shaping Palmyra Productions and its sustainable future. Their remarkable contributions inspire us to
+                        continue delivering excellence while leaving a positive impact on our environment and society."</p>
+                    <a href="#" class="btn btn-outline-success">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="card mb-4" style="margin-left: 15px !important; margin-right: 15px !important;">
+                <img src="bg5.png" class="card-img-top" alt="bg3" width="100%" height="400px">
+                <div class="card-body">
+                    <h2 class="card-title">Empowering Change Through Your Purchase: Supporting Communities with Palmyra Productions</h2>
+                    <p class="card-text">"Empowering Change Through Your Purchase: Supporting Communities with Palmyra Productions"
+                        At Palmyra Productions, we believe in the transformative power of every purchase. When you choose our 100% organic products, you're not just making a transaction – you're making a conscious choice to uplift communities and support those who need it most. Our commitment to sustainability extends beyond environmental practices; it encompasses the social impact we create, particularly for the underprivileged.<br>
+                    </p>
+                    <!-- Hidden content revealed with "Read More" button -->
+                    <div id="more-text" style="display:none;">
+                        <p class="card-text">
+                            Behind every product lies the dedication and hard work of individuals who often go unnoticed – the artisans and workers from economically disadvantaged backgrounds. These remarkable individuals pour their skills, craftsmanship, and love into creating our organic goods. Their hands weave intricate patterns, cultivate organic crops, and craft products that carry a piece of their stories.<br><br>
+
+                            By choosing Palmyra, you're becoming a part of a larger narrative of change. Your purchase directly contributes to the livelihoods of these artisans, offering them fair wages, improved living conditions, and a chance to break the cycle of poverty. It's a ripple effect – your support doesn't just impact the individual worker; it uplifts their families, children, and entire communities.<br><br>
+
+                            Imagine the smile of a weaver as they see their creation cherished in homes around the world. Picture the farmer's pride as their organic produce nourishes families near and far. These are the faces behind every product, and their stories are interwoven with yours when you bring a piece of Palmyra into your life.<br><br>
+
+                            Together, we're creating opportunities and empowering change. Your purchase helps provide education, healthcare, and better living conditions for the very people who bring our products to life. It's a symbiotic relationship – as you receive quality organic goods, you also give hope and a chance at a better life.<br><br>
+
+                            At Palmyra, we invite you to be a part of this journey of empowerment. With every product you buy, you're not just acquiring something beautiful and sustainable; you're investing in a brighter future for the artisans and their communities. Together, we can make a difference – one purchase at a time. Join us in championing the cause of empowering change through conscious consumption. Your support matters, and together, we're crafting a world where compassion and sustainability thrive hand in hand."<br><br>
+                        </p>
+                    </div>
+                    <a href="#more-text" class="btn btn-outline-success" onclick="showMoreText()">Read More</a>
+                </div>
+            </div>
+
+            <!-- JavaScript function to reveal hidden content -->
+            <script>
+                function showMoreText() {
+                    document.getElementById("more-text").style.display = "block";
+                }
+            </script>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+            <!-- Sidebar Widget -->
+            <div class="card mb-4" style="margin-left: 15px !important; margin-right: 15px !important;">
+                <div class="card-body">
+                    <img src="handbag2.jpeg">
+                </div>
+                <div class="card-body">
+                    <img src="bg4.png">
+                </div>
+                <div class="card-body">
+                    <img src="bg7.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-success text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>
+                    1234 Main St, City<br>
+                    State, Country<br>
+                    Phone: 123-456-7890<br>
+                    Email: info@palmyra.com
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Working Hours</h5>
+                <p>
+                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h5>Address</h5>
+                <p>
+                    1234 Green Street<br>
+                    Jaffna, Sri Lanka<br>
+                    Postal Code: 12345
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

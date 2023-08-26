@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: .5rem .5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black;
+}
+
+.navbar .navbar-brand1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+#navbarSupportedContent a{
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid white;
+}
+
+.mx-2 {
+    font-weight: 800;
+}
+
+.m-0 {
+    font-weight: 900;
+    font-size: 14px; /* Make the welcome text smaller */
+}
+
+/* Add custom class for phone number and email address */
+.custom-text {
+    font-size: 12px; /* Set the size for phone number and email address */
+    margin-right: 10px; /* Add some spacing between phone number and email address */
+}
+
+.mr-1 {
+    font-size: 14px; /* Match the size of the sign-up buttons */
+}
+
+/* Add custom class for the buttons' size */
+.custom-btn {
+    font-size: 14px; /* Set the size of the buttons */
+    padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+}
+
+.custom-icon {
+    color: #3BD16F; /* Set the color to green */
+    margin-right: 5px; /* Add some spacing between icons and text */
+}
+
+.h-100 {
+    height: 100% !important;
+
+}
+
+.hr-light-green {
+    border-color: #1f7e1f; /* Light green color */
+}
+
+.hr-thick {
+    border-width: 3px; /* Adjust the thickness as needed */
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Home*/
+
+/*Home*/
+
+#home {
+    /*background:  url("/images/bg5.png");*/
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(12, 246, 219, 0.49));
+    background-position: center;
+    flex-direction: column;
+    padding: 20px; /* Add some padding for better readability */
+}
+
+#home h1 {
+    font-size: 50px; /* Adjust the font size for mobile view */
+    color: green;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #cccccc,
+    0px 2px 0px #cccccc,
+    0px 3px 0px #cccccc,
+    0px 4px 0px #cccccc,
+    0px 5px 0px #cccccc,
+    0px 6px 0px #cccccc,
+    0px 7px 0px #cccccc;
+    word-wrap: break-word; /* Add this property to break long words */
+    text-align: center; /* Center align the text in mobile view */
+}
+
+#home p {
+    font-size: 14px; /* Adjust the font size for mobile view */
+    color: darkseagreen;
+    align-items: center;
+    text-align: center; /* Center align the text in mobile view */
+    word-wrap: break-word; /* Add this property to break long words */
+    margin-top: 10px; /* Add some spacing between the heading and the paragraph */
+}
+
+#about {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(12, 246, 219, 0.49));
+}
+
+#about h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#dropmenu {
+
+}
+
+/*Products*/
+#shop {
+    background: #e5e5e5;
+}
+
+#shop h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#shop img{
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    width: auto;
+    height: auto;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: 0.2s;
+}
+
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: 0.2s;
+}
+
+.card-body {
+    margin-left: 15px !important; margin-right: 15px !important;
+}
